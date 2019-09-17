@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 import Todos from "./components/Todos";
 import "./App.css";
+import "./BackPic.css";
 import Form from "./components/Form";
 import uuid from "uuid";
+
 export class App extends Component {
   constructor() {
     super();

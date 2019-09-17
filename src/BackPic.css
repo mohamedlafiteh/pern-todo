@@ -1,0 +1,5 @@
+.defaultHero,
+.roomsHero {
+  background-image: url("./components/todo1.jpg");
+  min-height: 60vh;
+}

@@ -4,7 +4,6 @@ import PropTypes from "prop-types";
 export class TodoList extends Component {
   getStyle = () => {
     return {
-      background: "green",
       padding: "10px",
       textDecoration: this.props.todos.completed ? "line-through" : "none"
     };
