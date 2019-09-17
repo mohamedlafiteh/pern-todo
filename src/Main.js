@@ -4,6 +4,7 @@ import { Route, Switch } from "react-router-dom";
 import About from "./components/About";
 import Error from "./components/Error";
 import Header from "./components/Header";
+
 export class Main extends Component {
   render() {
     return (

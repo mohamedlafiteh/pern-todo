@@ -2,24 +2,24 @@ import React, { Component } from "react";
 import Todos from "./components/Todos";
 import "./App.css";
 import Form from "./components/Form";
-
+import uuid from "uuid";
 export class App extends Component {
   constructor() {
     super();
     this.state = {
       todos: [
         {
-          id: 1,
+          id: uuid.v4(),
           title: "play football",
           completed: false
         },
         {
-          id: 2,
+          id: uuid.v4(),
           title: "meet my friend",
           completed: true
         },
         {
-          id: 3,
+          id: uuid.v4(),
           title: "eat dinner with family",
           completed: false
         }
@@ -44,10 +44,11 @@ export class App extends Component {
   };
   addNewTodo = title => {
     const newTodo = {
-      id: 4,
+      id: uuid.v4(),
       title: title,
       completed: null
     };
+
     this.setState({
       todos: [...this.state.todos, newTodo]
     });
